@@ -7,6 +7,9 @@
 body{
     background-color: #212020;
 }
+p{
+  color: var(--Color-Text-Fondant);
+}
 
 :root{
     --Color-Background-Charcoal:#212020;
@@ -17,12 +20,24 @@ body{
     --SideBar-Width: 240px;
     --Font-Main-Hammersmith:"Hammersmith One", sans-serif;
 }
-
+.text-brand{
+  color: var(--Color-Text-Fondant);
+}
+.full-height{
+  min-height: 100vh;
+  height:100%;
+  display: flex;
+  flex-flow:column nowrap;
+  justify-content: center;
+  padding: 80px 0;
+  border-bottom: 2px solid rgb(214, 195, 189, 0.5);
+}
 .hammersmith-one-regular {
     font-family: "Hammersmith One", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
+
 /* Base styling on Header tags */
   h1,h2,h3,h4,h5,h6{
     color: var(--Color-Header-Blossom);
@@ -33,6 +48,7 @@ body{
     text-decoration: none;
     color: var(--Color-Text-Fondant);
     transition: all 0.4s ease;
+    font-family: var(--Font-Main-Hammersmith);
   }
   a:hover{
     color: var(--Color-Background2-Juniper);
@@ -42,11 +58,42 @@ body{
     width:100%;
   }
   /* Navbar */
+  .navbar{
+    background-color: var(--Color-Background2-Juniper);
+  }
+
+  ul li .nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--Color-Text-Fondant);
+
+    &:hover{
+      color: var(--Color-Header-Blossom);
+    }
+  }
+
   @media (min-width: 992px) {
     .navbar{
         min-height: 100vh;
         width: var(--SideBar-Width);
+        background: linear-gradient(rgb(89, 82, 64, 0.9), rgb(89, 82, 64, 0.9)), url(https://imaraansheldon.github.io/allImages/portfolio-Images/Nav_Background.jpeg);
+        background-size:cover;
+        background-position: center;
     }
-    
+    .navbar-brand img{
+      border: 8px solid var(--Color-Header-Blossom) ;
+    }
+  /* Content Wrapper */
+   #Content-Wrapper{
+    padding-left: var(--SideBar-Width);
+    font-family: var(--Font-Main-Hammersmith);
+  }
+  /* /Content Wrapper/ */
+
   }
   
+  /* btn */
+  .btn{
+    
+  }
+  /* /btn/ */
