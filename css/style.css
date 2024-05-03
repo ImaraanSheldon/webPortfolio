@@ -57,6 +57,9 @@ p{
   img{
     width:100%;
   }
+  img[alt='Mugshot']{
+    aspect-ratio: 1/1;
+  }
   /* Navbar */
   .navbar{
     background-color: var(--Color-Background2-Juniper);
@@ -94,6 +97,40 @@ p{
   
   /* btn */
   .btn{
-    
+    padding: 12px 28px;
+    font-weight: 700;
+    color: var(--Color-Text-Fondant);
+  }
+
+  .btn-brand{
+    background-color: var(--Color-Accent-Pinot);
+    color: var(--Color-Header-Blossom);
+    border-color: var(--Color-Header-Blossom);
+    &:hover,
+     :focus{
+      background-color: var(--Color-Background-Charcoal);
+      color: var(--Color-Header-Blossom);
+      border-color: var(--Color-Header-Blossom);
+     }
   }
   /* /btn/ */
+
+  .link-custom{
+    font-weight: 700;
+    position: relative;
+      
+    }   
+  .link-custom::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--Color-Header-Blossom);
+    position: absolute;
+    left:0;
+    top: 110%;
+    transition: all 0.5s ease;
+    }
+    .link-custom:hover::after{
+      width:100%;
+      transition: all 0.5 ease-in;
+    }
