@@ -23,6 +23,9 @@ p{
 .text-brand{
   color: var(--Color-Text-Fondant);
 }
+.bg-base{
+  background-color: var(--Color-Background2-Juniper);
+}
 .full-height{
   min-height: 100vh;
   height:100%;
@@ -32,6 +35,25 @@ p{
   padding: 80px 0;
   border-bottom: 2px solid rgb(214, 195, 189, 0.5);
 }
+.shadow-effect{
+  transition: all 0.5s;
+
+  &:hover{
+    box-shadow: -6px 6px 0 0 var(--Color-Accent-Pinot);
+  }
+}
+
+.iconbox{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Color-Accent-Pinot);
+  color: #ffffff;
+  font-size: 2rem;
+}
+
 .hammersmith-one-regular {
     font-family: "Hammersmith One", sans-serif;
     font-weight: 400;
@@ -73,6 +95,9 @@ p{
     &:hover{
       color: var(--Color-Header-Blossom);
     }
+  }
+  .nav-link.active{
+    color: var(--Color-Header-Blossom);
   }
 
   @media (min-width: 992px) {
@@ -134,3 +159,15 @@ p{
       width:100%;
       transition: all 0.5 ease-in;
     }
+
+    /* Card */
+  .custom-card .custom-card-image{
+    overflow: hidden;
+  }
+  .custom-card .custom-card-image img{
+    transition: all 0.4s ease;
+  }
+  .custom-card:hover .custom-card-image img{
+    transform: scale(1.1);
+  }
+    /* /Card/ */
