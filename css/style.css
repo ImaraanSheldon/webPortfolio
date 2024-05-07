@@ -3,9 +3,12 @@
 ::after{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: #212020;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 p{
   color: var(--Color-Text-Fondant);
@@ -82,6 +85,10 @@ p{
   img[alt='Mugshot']{
     aspect-ratio: 1/1;
   }
+  img[alt='No']{
+    aspect-ratio: 1/1;
+    width: 8rem;
+  }
   /* Navbar */
   .navbar{
     background-color: var(--Color-Background2-Juniper);
@@ -99,7 +106,11 @@ p{
   .nav-link.active{
     color: var(--Color-Header-Blossom);
   }
-
+ @media(max-width:300px){
+  body{
+    
+  }
+ }
   @media (min-width: 992px) {
     .navbar{
         min-height: 100vh;
@@ -171,3 +182,27 @@ p{
     transform: scale(1.1);
   }
     /* /Card/ */
+
+    .form-control{
+      background-color:var(--Color-Text-Fondant);
+      border-color: var(--Color-Header-Blossom);
+      color:var(--Color-Text-Fondant);
+    }
+    .form-control:focus{
+      border-color: var(--Color-Accent-Pinot);
+      box-shadow: none;
+    }
+    .form-control::placholder{
+      color: var(--Color-Text-Fondant);
+    }
+    input.form-control{
+      height: 44px;
+    }
+    .Return{
+      width: 32px;
+      height: 32px;
+    }
+    .social-links{
+      padding: 5px;
+      background-color: var(--Color-Text-Fondant);
+    }
