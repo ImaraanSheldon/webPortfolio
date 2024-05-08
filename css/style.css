@@ -111,12 +111,11 @@ p{
   .nav-link.active{
     color: var(--Color-Header-Blossom);
   }
- @media(max-width:300px){
-  body{
-    
-  }
- }
+
   @media (min-width: 992px) {
+    #footer{
+      padding-left: var(--SideBar-Width);
+    }
     .navbar{
         min-height: 100vh;
         width: var(--SideBar-Width);
@@ -210,4 +209,9 @@ p{
     .social-links{
       padding: 5px;
       background-color: var(--Color-Text-Fondant);
+    }
+
+    /* footer */
+    .footer-icon{
+      color: white;
     }
