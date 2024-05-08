@@ -87,7 +87,12 @@ p{
   }
   img[alt='No']{
     aspect-ratio: 1/1;
-    width: 8rem;
+    width: 138px;
+    height: 138px;
+  }
+  img[alt='Card1']{
+    aspect-ratio: 10/7;
+    width: 100%;
   }
   /* Navbar */
   .navbar{
