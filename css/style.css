@@ -158,6 +158,10 @@ p{
   .link-custom{
     font-weight: 700;
     position: relative;
+    
+    &:hover{
+      color: var(--Color-Header-Blossom);
+    }
       
     }   
   .link-custom::after{
@@ -190,14 +194,14 @@ p{
     .form-control{
       background-color:var(--Color-Text-Fondant);
       border-color: var(--Color-Header-Blossom);
-      color:var(--Color-Text-Fondant);
+      color:black;
     }
     .form-control:focus{
       border-color: var(--Color-Accent-Pinot);
       box-shadow: none;
     }
     .form-control::placholder{
-      color: var(--Color-Text-Fondant);
+      color: black;
     }
     input.form-control{
       height: 44px;
